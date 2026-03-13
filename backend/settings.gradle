@@ -1,0 +1,6 @@
+rootProject.name = 'multi-tenant-notes'
+
+include 'notes-common'
+include 'notes-storage'
+include 'notes-storage:notes-storage-file'
+include 'notes-storage:notes-storage-s3'

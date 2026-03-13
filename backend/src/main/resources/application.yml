@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: multi-tenant-notes
+  profiles:
+    active: local

@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+  flyway:
+    enabled: false
+  h2:
+    console:
+      enabled: true
+
+jwt:
+  secret: test-secret-key-for-h2-local-development-only
+  access-token-expiry: 3600
+  refresh-token-expiry: 604800
